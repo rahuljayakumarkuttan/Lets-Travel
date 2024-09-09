@@ -31,7 +31,7 @@ body {
 .home {
   width: 100%;
   height: 90vh;
-  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(../img/cloud-forest-landscape.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(img/pexels-swastikarora-19743480.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
