@@ -1,0 +1,127 @@
+:root {
+  --color-1:green;
+  --color-2:white;
+  --color-3:rgb(143, 246, 236);
+  --color-4:black;
+  --text-shadow:0px 1px 1px black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "SUSE", sans-serif;
+}
+
+/*Header*/
+.website-title {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.website-title .span-1 {
+  color: var(--color-1);
+  font-size: 2.5rem;
+}
+
+.website-title .span-2 {
+  color: var(--color-4);
+}
+
+.home {
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(/LetsTravel.com/img/cloud-forest-landscape.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home .content {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.home .content h5 {
+  color: var(--color-2);
+  font-size: 2.5rem;
+  font-weight: 500;
+  text-shadow: var(--text-shadow);
+}
+
+.home .content h1 {
+  color: var(--color-2);
+  font-size: 4rem;
+  font-weight: 600;
+  text-shadow: var(--text-shadow);
+  margin-top: 5px;
+}
+
+.home .content p {
+  color: var(--color-2);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: var(--text-shadow);
+  margin-bottom: 30px;
+}
+
+.changecontent::after {
+  content: ' ';
+  color: var(--color-3);
+  text-shadow: var(--text-shadow);
+  animation: changetxt 20s infinite linear;
+}
+
+@keyframes changetxt {
+  0%{content:"Wayanad";}
+  10%{content:"Ponmudi";}
+  20%{content:"Idukki";}
+  30%{content:"Kuttanadu";}
+  40%{content:"Kozhikodu";}
+  50%{content:"Alappuzha";}
+  60%{content:"Munnar";}
+  70%{content:"Athirapally";}
+  80%{content:"Kovalam";}
+  90%{content:"Thrissur";}
+  100%{content:"vagamon";}
+}
+
+@media (max-width:850px) {
+  .home {
+    background-position: 50%;
+  }
+}
+@media (max-width:450px) {
+  .home .content h5{
+    font-size: 1.5rem;
+  }
+
+  .home .content h1 {
+    font-size: 3rem;
+  }
+
+  .home .content p {
+    font-size: 1rem;
+  }
+}
+
+.cont-1 {
+  padding: 50px;
+}
+
+label.error {
+  color: red;
+  margin-top: 8px;
+  font-size: 1rem;
+}
+
+input.error,
+textarea.error {
+  border: 1px solid red;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 55vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
